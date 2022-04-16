@@ -1,0 +1,5 @@
+C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.csprojAssemblyReference.cache
+C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\bin\Debug\Workshop1.Contracts.dll
+C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\bin\Debug\Workshop1.Contracts.pdb
+C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.dll
+C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.pdb

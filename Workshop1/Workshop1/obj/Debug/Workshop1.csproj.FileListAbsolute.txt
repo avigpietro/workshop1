@@ -1,0 +1,15 @@
+C:\Users\apietro\source\repos\Workshop1\Workshop1\bin\Debug\Workshop1.exe.config
+C:\Users\apietro\source\repos\Workshop1\Workshop1\bin\Debug\Workshop1.exe
+C:\Users\apietro\source\repos\Workshop1\Workshop1\bin\Debug\Workshop1.pdb
+C:\Users\apietro\source\repos\Workshop1\Workshop1\bin\Debug\Ninject.dll
+C:\Users\apietro\source\repos\Workshop1\Workshop1\bin\Debug\Ninject.xml
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.csprojAssemblyReference.cache
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.Form1.resources
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.Properties.Resources.resources
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.csproj.GenerateResource.cache
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.csproj.CopyComplete
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.exe
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.pdb
+C:\Users\apietro\source\repos\Workshop1\Workshop1\obj\Debug\Workshop1.PrintPopUp.resources
+C:\Users\apietro\source\repos\Workshop1\Workshop1\bin\Debug\Workshop1.Contracts.dll
+C:\Users\apietro\source\repos\Workshop1\Workshop1\bin\Debug\Workshop1.Contracts.pdb
