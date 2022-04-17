@@ -1,6 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd8623d3_002D563e_002D4fe8_002D95ec_002Dc545c725a416/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OnShowForm1_WhenRun_ShouldShowSuccessFully" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E4D44B9E-16C2-4708-B916-1F0B2F3446DA::.NETFramework,Version=v4.6.2::Workshop1.Unit.Tests.Form1UnitTests.OnShowForm1_WhenRun_ShouldShowSuccessFully&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\apietro\AppData\Local\Temp\JetBrains\ReSharperPlatformVs16\vAny_be7bdeb1\CoverageData\_Workshop1.-291425971\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=77c4173a_002D8355_002D4254_002D90b1_002Db5ba25da26a3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OnSaveData_WhenHaveMultipleCustomers_MustWriteData" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd8623d3_002D563e_002D4fe8_002D95ec_002Dc545c725a416/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OnShowForm1_WhenRun_ShouldShowSuccessFully" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

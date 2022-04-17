@@ -4,15 +4,15 @@
     using Models;
 
     /// <summary>
-    /// Defines the <see cref="IPrint" />.
+    /// Defines the <see cref="IPrintService" />.
     /// </summary>
-    public interface IPrint
+    public interface IPrintService
     {
         /// <summary>
         /// The Print.
         /// </summary>
         /// <param name="customers">The customers<see cref="IEnumerable{Customer}"/>.</param>
         /// <returns>The <see cref="string"/>.</returns>
-        string PrintCustomer(IEnumerable<Customer> customers);
+        string PrintCustomers(IEnumerable<Customer> customers);
     }
 }

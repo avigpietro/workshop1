@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,7 +48,7 @@
     <Compile Include="Interface\ICustomerFactory.cs" />
     <Compile Include="Interface\IFileManager.cs" />
     <Compile Include="Interface\ICustomerFacade.cs" />
-    <Compile Include="Interface\IPrint.cs" />
+    <Compile Include="Interface\IPrintService.cs" />
     <Compile Include="Interface\IStreamReaderFactory.cs" />
     <Compile Include="Interface\IStreamWriterFactory.cs" />
     <Compile Include="Models\Customer.cs" />

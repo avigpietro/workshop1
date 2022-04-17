@@ -16,7 +16,7 @@ namespace Workshop1.Services
         /// </summary>
         public override void Load()
         {
-            Bind<IPrint>().To<Print>().InSingletonScope();
+            Bind<IPrintService>().To<PrintService>().InSingletonScope();
             Bind<IFileManager>().To<FileManager>().InSingletonScope();
             Bind<IPrintPopUpFactory>().To<PrintPopUpFactory>().InSingletonScope();
             Bind<IStreamReaderFactory>().To<StreamReaderFactory>().InSingletonScope();

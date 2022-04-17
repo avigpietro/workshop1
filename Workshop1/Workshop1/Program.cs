@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Windows.Forms;
 
 namespace Workshop1
@@ -8,6 +9,7 @@ namespace Workshop1
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        [ExcludeFromCodeCoverage]
         [STAThread]
         static void Main()
         {

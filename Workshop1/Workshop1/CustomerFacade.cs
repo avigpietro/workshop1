@@ -11,7 +11,7 @@ namespace Workshop1
         /// <summary>
         /// Gets or sets the Print.
         /// </summary>
-        public static IPrint Print { get; set; }
+        public IPrintService Print { get; set; }
 
         /// <summary>
         /// Gets or sets the Kernel.
@@ -46,15 +46,14 @@ namespace Workshop1
         {
             var customer = CustomerFactory.Create(address, age, creditCardNumber, gender, id,
                 lastName, name, phoneNumber);
-
-
+            
             FileManager.Write(customer);
         }
 
         ///<inheritdoc/>
         public void ShowData()
         {
-            var printPhrase = Print.PrintCustomer(FileManager.Read());
+            var printPhrase = Print.PrintCustomers(FileManager.Read());
 
             var printPopUp = PrintPopUpFactory.Create();
 
@@ -65,7 +64,7 @@ namespace Workshop1
 
         private void InitializeComponent()
         {
-            Print = Kernel.Get<IPrint>();
+            Print = Kernel.Get<IPrintService>();
             PrintPopUpFactory = Kernel.Get<IPrintPopUpFactory>();
             CustomerFactory = Kernel.Get<ICustomerFactory>();
             FileManager = Kernel.Get<IFileManager>();

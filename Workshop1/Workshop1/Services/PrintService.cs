@@ -6,10 +6,10 @@ using Workshop1.Contracts.Models;
 namespace Workshop1.Services
 {
     /// <inheritdoc/>
-    public class Print : IPrint
+    public class PrintService : IPrintService
     {
         /// <inheritdoc/>
-        public string PrintCustomer(IEnumerable<Customer> customers)
+        public string PrintCustomers(IEnumerable<Customer> customers)
         {
             var stringBuilder = new StringBuilder();
 

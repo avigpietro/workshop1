@@ -7,7 +7,6 @@ using Workshop1.Contracts.Models;
 namespace Workshop1.Services
 {
     using System.IO;
-    using System.Text;
 
     /// <inheritdoc/>
     public class FileManager : IFileManager

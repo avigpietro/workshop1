@@ -74,7 +74,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CustomModule.cs" />
     <Compile Include="Services\FileManager.cs" />
-    <Compile Include="Services\Print.cs" />
+    <Compile Include="Services\PrintService.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

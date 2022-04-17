@@ -65,8 +65,7 @@ namespace Workshop1.Unit.Tests
             Form1.btnShowCustomers_Click(null, null);
 
             //Assert
-            FormFacadeMock.Verify(fun => fun.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
-                It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()),Times.Once);
+            FormFacadeMock.Verify(fun => fun.ShowData(),Times.Once);
         }
     }
 }
