@@ -18,7 +18,7 @@ namespace Workshop1.Unit.Tests
         /// <summary>
         /// Gets or sets the FormFacadeMock.
         /// </summary>
-        public Mock<IFormFacade> FormFacadeMock { get; set; }
+        public Mock<ICustomerFacade> FormFacadeMock { get; set; }
 
         /// <summary>
         /// The SetUp.
@@ -36,7 +36,7 @@ namespace Workshop1.Unit.Tests
                 txtPhoneNumber = { Text = "Test" }
             };
 
-            FormFacadeMock = new Mock<IFormFacade>();
+            FormFacadeMock = new Mock<ICustomerFacade>();
             Form1.FormFacade = FormFacadeMock.Object;
 
         }

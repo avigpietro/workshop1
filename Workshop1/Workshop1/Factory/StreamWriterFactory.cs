@@ -9,7 +9,7 @@ namespace Workshop1.Factory
         /// <inheritdoc />
         public StreamWriter Create(string filePath)
         {
-            return new StreamWriter(filePath);
+            return new StreamWriter(filePath,true);
         }
     }
 }

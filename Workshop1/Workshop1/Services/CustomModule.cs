@@ -21,7 +21,7 @@ namespace Workshop1.Services
             Bind<IPrintPopUpFactory>().To<PrintPopUpFactory>().InSingletonScope();
             Bind<IStreamReaderFactory>().To<StreamReaderFactory>().InSingletonScope();
             Bind<IStreamWriterFactory>().To<StreamWriterFactory>().InSingletonScope();
-            Bind<IFormFacade>().To<FormFacade>().InSingletonScope();
+            Bind<ICustomerFacade>().To<CustomerFacade>().InSingletonScope();
             Bind<ICustomerFactory>().To<CustomerFactory>().InSingletonScope();
         }
     }

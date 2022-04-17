@@ -1,4 +1,7 @@
-﻿namespace Workshop1.Contracts.Interface
+﻿using System.Collections.Generic;
+using Workshop1.Contracts.Models;
+
+namespace Workshop1.Contracts.Interface
 {
     /// <summary>
     /// Defines the <see cref="IFileManager" />.
@@ -8,12 +11,12 @@
         /// <summary>
         /// The Write.
         /// </summary>
-        void Write(string entity);
+        void Write(Customer customer);
 
         /// <summary>
         /// The Read.
         /// </summary>
         /// <returns></returns>
-        string Read();
+        IEnumerable<Customer> Read();
     }
 }

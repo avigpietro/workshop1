@@ -3,3 +3,11 @@ C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\bin\Debug\Workshop1.
 C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\bin\Debug\Workshop1.Contracts.pdb
 C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.dll
 C:\Users\apietro\source\repos\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.pdb
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\bin\Debug\Workshop1.Contracts.dll
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\bin\Debug\Workshop1.Contracts.pdb
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.csprojAssemblyReference.cache
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.dll
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.pdb
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\bin\Debug\Newtonsoft.Json.dll
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\bin\Debug\Newtonsoft.Json.xml
+C:\Users\apietro\Documents\workshop1\Workshop1\Workshop1.Contracts\obj\Debug\Workshop1.Contracts.csproj.CopyComplete

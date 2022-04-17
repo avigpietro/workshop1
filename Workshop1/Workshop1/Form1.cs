@@ -20,7 +20,7 @@ namespace Workshop1
         /// <summary>
         /// An form facade with all necessary scope
         /// </summary>
-        public IFormFacade FormFacade { get; set; }
+        public ICustomerFacade FormFacade { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Form1"/> class.
@@ -30,7 +30,7 @@ namespace Workshop1
             InitializeComponent();
             var module = new CustomModule();
             Kernel = new StandardKernel(module);
-            FormFacade = Kernel.Get<IFormFacade>();
+            FormFacade = Kernel.Get<ICustomerFacade>();
         }
 
         /// <summary>
@@ -38,9 +38,10 @@ namespace Workshop1
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        public void button1_Click(object sender, EventArgs e)
-        {
-            FormFacade.ShowData(txtName.Text, txtAge.Text, txtAddress.Text, txtPhoneNumber.Text);
-        }
+        public void button1_Click(object sender, EventArgs e) =>
+            FormFacade.SaveData(txtAddress.Text, txtAge.Text, txtCreditCard.Text,
+                txtGender.Text, txtIdNumber.Text, txtLastName.Text, txtName.Text,txtPhoneNumber.Text);
+
+        private void btnShowCustomers_Click(object sender, EventArgs e) => FormFacade.ShowData();
     }
 }

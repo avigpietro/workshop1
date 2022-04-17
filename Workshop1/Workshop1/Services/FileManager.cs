@@ -1,5 +1,8 @@
-﻿using Ninject;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
+using Ninject;
 using Workshop1.Contracts.Interface;
+using Workshop1.Contracts.Models;
 
 namespace Workshop1.Services
 {
@@ -36,28 +39,33 @@ namespace Workshop1.Services
         }
         
         /// <inheritdoc/>
-        public void Write(string entity)
+        public void Write(Customer customer)
         {
             if (!File.Exists(FileLoc)) return;
             using (var sw = StreamWriterFactory.Create(FileLoc))
             {
-                sw.WriteLine(entity);
+                sw.BaseStream.Seek(0, SeekOrigin.End);
+                sw.WriteLine(JsonConvert.SerializeObject(customer));
             }
         }
 
         /// <inheritdoc/>
-        public string Read()
+        public IEnumerable<Customer> Read()
         {
-            if (!File.Exists(FileLoc)) return string.Empty;
+            var responseValue = new List<Customer>();
 
-            var stringBuilder = new StringBuilder();
-
+            if (!File.Exists(FileLoc)) return responseValue;
+            
             using (TextReader tr = StreamReaderFactory.Create(FileLoc))
             {
-                stringBuilder.Append(tr.ReadLine());
+                string line;
+                while ((line = tr.ReadLine()) != null)
+                {
+                    responseValue.Add(JsonConvert.DeserializeObject<Customer>(line));
+                }
             }
 
-            return stringBuilder.ToString();
+            return responseValue;
         }
 
         private void Initialize()
