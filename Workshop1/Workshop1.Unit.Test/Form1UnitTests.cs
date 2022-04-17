@@ -26,8 +26,6 @@ namespace Workshop1.Unit.Tests
         [SetUp]
         public void SetUp()
         {
-            
-
             Form1 = new Form1
             {
                 txtName = { Text = "Test" },
@@ -38,24 +36,37 @@ namespace Workshop1.Unit.Tests
 
             FormFacadeMock = new Mock<ICustomerFacade>();
             Form1.FormFacade = FormFacadeMock.Object;
-
         }
 
-        /// <summary>
-        /// The OnShowForm1_WhenRun_ShouldShowSuccessFully.
-        /// </summary>
         [Test]
-        public void OnShowForm1_WhenRun_ShouldShowSuccessFully()
+        public void OnShowForm1_WhenRun_ShouldSaveSuccessfully()
         {
             //Arrange
             FormFacadeMock.Setup(form =>
-                form.ShowData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()));
+                form.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
+                    It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()));
 
             //Act
             Form1.button1_Click(null, null);
 
             //Assert
-            FormFacadeMock.Verify(fun => fun.ShowData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()));
+            FormFacadeMock.Verify(fun => fun.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
+                It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()), Times.Once);
+        }
+
+        [Test]
+        public void OnShowForm1_WhenLoadCustomers_ShouldShowSuccessFully()
+        {
+            //Arrange
+            FormFacadeMock.Setup(form =>
+                form.ShowData()).Verifiable();
+
+            //Act
+            Form1.btnShowCustomers_Click(null, null);
+
+            //Assert
+            FormFacadeMock.Verify(fun => fun.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
+                It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()),Times.Once);
         }
     }
 }

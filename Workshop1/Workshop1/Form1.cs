@@ -42,6 +42,6 @@ namespace Workshop1
             FormFacade.SaveData(txtAddress.Text, txtAge.Text, txtCreditCard.Text,
                 txtGender.Text, txtIdNumber.Text, txtLastName.Text, txtName.Text,txtPhoneNumber.Text);
 
-        private void btnShowCustomers_Click(object sender, EventArgs e) => FormFacade.ShowData();
+        public void btnShowCustomers_Click(object sender, EventArgs e) => FormFacade.ShowData();
     }
 }
