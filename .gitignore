@@ -1,0 +1,6 @@
+*.dll,
+*.cache,
+*.Assemblyattributes.*
+*.pdb
+*.exe
+*.txt
