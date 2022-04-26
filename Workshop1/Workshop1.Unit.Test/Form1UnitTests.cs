@@ -1,4 +1,6 @@
-﻿using Moq;
+﻿using System;
+using FluentAssertions;
+using Moq;
 using NUnit.Framework;
 using Workshop1.Contracts.Interface;
 
@@ -37,22 +39,7 @@ namespace Workshop1.Unit.Tests
             FormFacadeMock = new Mock<ICustomerFacade>();
             Form1.FormFacade = FormFacadeMock.Object;
         }
-
-        [Test]
-        public void OnShowForm1_WhenRun_ShouldSaveSuccessfully()
-        {
-            //Arrange
-            FormFacadeMock.Setup(form =>
-                form.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
-                    It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()));
-
-            //Act
-            Form1.button1_Click(null, null);
-
-            //Assert
-            FormFacadeMock.Verify(fun => fun.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
-                It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()), Times.Once);
-        }
+        
 
         [Test]
         public void OnShowForm1_WhenLoadCustomers_ShouldShowSuccessFully()
@@ -66,6 +53,40 @@ namespace Workshop1.Unit.Tests
 
             //Assert
             FormFacadeMock.Verify(fun => fun.ShowData(),Times.Once);
+        }
+
+        [Test]
+        public void Onbutton1_Click_WhenTheresNoError_ShouldNotThrowException()
+        {
+            //Arrange
+            FormFacadeMock.Setup(form =>
+                form.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
+                    It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()));
+            
+            //Act
+            var action = new Action(() =>  Form1.button1_Click(null, null));
+            
+            //Assert
+            action.Should().NotThrow<Exception>();
+            FormFacadeMock.VerifyAll();
+        }
+
+        [Test]
+        public void Onbutton1_Click_WhenTheresAnError_ShouldThrowException()
+        {
+            //Arrange
+
+            var exception = new Exception("Facade Problem");
+
+            FormFacadeMock.Setup(form =>
+                form.SaveData(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(),
+                    It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>())).Throws(exception);
+
+            //Act
+            var action = new Action(() => Form1.button1_Click(null, null));
+
+            //Assert
+            action.Should().Throw<Exception>().WithMessage("Error found:Facade Problem");
         }
     }
 }

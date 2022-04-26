@@ -38,10 +38,37 @@ namespace Workshop1
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        public void button1_Click(object sender, EventArgs e) =>
-            FormFacade.SaveData(txtAddress.Text, txtAge.Text, txtCreditCard.Text,
-                txtGender.Text, txtIdNumber.Text, txtLastName.Text, txtName.Text,txtPhoneNumber.Text);
+        public void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormFacade.SaveData(txtAddress.Text, txtAge.Text, txtCreditCard.Text,
+                    txtGender.Text, txtIdNumber.Text, txtLastName.Text, txtName.Text, txtPhoneNumber.Text);
+            }
+            catch (Exception exception)
+            {
+                throw new Exception("Error found:" + exception.Message);
 
-        public void btnShowCustomers_Click(object sender, EventArgs e) => FormFacade.ShowData();
+                
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void btnShowCustomers_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormFacade.ShowData();
+
+            }
+            catch (Exception exception)
+            {
+                throw new Exception("Error found:" + exception.Message);
+            }
+        }
     }
 }
